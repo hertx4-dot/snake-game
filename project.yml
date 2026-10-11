@@ -9,7 +9,10 @@ targets:
   SnakeGame:
     type: application
     platform: iOS
-    sources: [SnakeGame]
+    sources:
+      - path: SnakeGame
+        excludes:
+          - "Info.plist"
     info:
       path: SnakeGame/Info.plist
       properties:
