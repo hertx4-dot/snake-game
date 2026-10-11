@@ -3,13 +3,13 @@ options:
   bundleIdPrefix: com.example
   deploymentTarget:
     iOS: "16.0"
+  xcodeVersion: "15.0"
   createIntermediateGroups: true
 targets:
   SnakeGame:
     type: application
     platform: iOS
-    sources:
-      - SnakeGame
+    sources: [SnakeGame]
     info:
       path: SnakeGame/Info.plist
       properties:
@@ -17,7 +17,6 @@ targets:
         CFBundleShortVersionString: "1.0"
         CFBundleVersion: "1"
         UILaunchScreen: {}
-        UIRequiredDeviceCapabilities: [armv7]
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
         UIStatusBarStyle: UIStatusBarStyleLightContent
